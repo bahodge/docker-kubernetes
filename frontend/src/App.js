@@ -14,8 +14,8 @@ function App() {
                     target="_blank"
                     rel="noopener noreferrer"
                 >
-                    Learn React
-                </a>
+             		Getting Local Dev Env up   
+	    </a>
             </header>
         </div>
     );
