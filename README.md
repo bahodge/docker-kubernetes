@@ -40,5 +40,5 @@
 
 #### build docker file with tag
 
-- `docker build <repo>/<image>:<tag>`
+- `docker build -t <repo>/<image>:<tag> <directory>`
 
