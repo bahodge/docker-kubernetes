@@ -2,6 +2,7 @@
 FROM alpine
 
 # download and install dep
+RUN apk add --update gcc
 RUN apk add --update redis
 
 # what to do on start

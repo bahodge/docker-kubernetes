@@ -1,35 +1,44 @@
-### create image
+### Creating Images
 
--   `docker create <image>`
+-  `docker create <image>`
 
 ### start image
 
--   `docker start <containerid> <override command>`
+-  `docker start <containerid>`
 
 ### runs docker create and start all in 1
 
--   `docker run <container> <override command>`
--   Open a docker container w/ shell - `docker run -it busybox sh`
+-  `docker run <container> <override command>`
+-  Open a docker container w/ shell - `docker run -it busybox sh`
 
 ### list containers
 
--   `docker ps`
+-  `docker ps`
+-  `docker ps -a`
 
-### list all containers(dead)
-
--   `docker ps -a`
-
-### kill containers
+### Killing Containers
 
 -   `docker kill <containerid>`
 
-### exec
+### Executing Commands in containers
 
--   `docker run <image>`
--   `docker exec -it <containerid> <command>`
--   Shell Access - `docker exec -it <containerid> sh`
+- `docker exec -it <containerid> <command>`
 
-### build
+#### Shell Access
 
--   build from docker file
--   `docker build .`
+- `docker exec -it <containerid> sh`
+- `docker exec -it <containerid> bash`
+- `docker exec -it <containerid> zsh`
+
+### Building Images 
+
+`docker build <path/to/dir>`
+
+#### build from docker file
+
+- `docker build .`
+
+#### build docker file with tag
+
+- `docker build <repo>/<image>:<tag>`
+
