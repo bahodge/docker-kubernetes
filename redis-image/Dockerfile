@@ -1,9 +1,8 @@
-# use existing docker as base
+# use existing docker image
 FROM alpine
 
-#download and install dependency
+# download and install dep
 RUN apk add --update redis
-RUN apk add --update gcc
 
-# tell the image what to do when it starts as container
+# what to do on start
 CMD ["redis-server"]
